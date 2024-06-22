@@ -1,0 +1,18 @@
+services:
+  tor-proxy:
+    image: "tor-proxy"
+    restart: "unless-stopped"
+    build:
+      context: "./build"
+      dockerfile: "Dockerfile"
+    container_name: "proxy"
+    ports:
+      - "9050:9050"
+      - "9052:9052"
+      - "9053:9053"
+      - "9054:9054"
+    network_mode: "bridge"
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_RAW
