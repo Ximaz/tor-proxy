@@ -1,4 +1,4 @@
-SocksPort 0.0.0.0:9050   # Default SOCK5 of the Tor client, the one you may pass as a `proxyServer` to the `TorBrowser` function (see below).
+SocksPort 0.0.0.0:9050
 # SocksPort 0.0.0.0:9051 # (bypass) This port is used by Tor to allow external applications who are connected to this port to control Tor process.
 SocksPort 0.0.0.0:9052
 SocksPort 0.0.0.0:9053
